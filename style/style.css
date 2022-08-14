@@ -268,4 +268,111 @@ picture {
   justify-content: center;
 }
 
+/*
+---------------------------------
+----------Desktop version----------
+--------------------------------
+*/
+@media screen and (min-width: 900px) {
+  .btn {
+    padding: 1rem 5rem;
+  }
+  .btn-container {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 900px) {
+  .header__secondary {
+    margin-bottom: 3rem;
+  }
+  .header {
+    background-image: url(../images/bg-header-desktop.png);
+  }
+  .header__container {
+    gap: 4rem;
+  }
+  .header__content {
+    max-width: 50%;
+  }
+  .main {
+    width: 100%;
+  }
+  .main .intro__title {
+    max-width: 50%;
+    margin-inline: auto;
+    margin-bottom: 10rem;
+  }
+  .main .intro__grid {
+    grid-template-rows: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+  .main .intro__img {
+    background-size: 100%;
+  }
+  .main .intro__content .details {
+    width: 90%;
+  }
+  .main .intro__content .details .header__secondary,
+.main .intro__content .details .parag {
+    text-align: left;
+  }
+  .main .intro__content .details .header__secondary {
+    margin-bottom: 1rem;
+  }
+  .main .about__title {
+    width: 50%;
+    margin-inline: auto;
+  }
+  .main .about__workflow {
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .main .about__workflow .text__box {
+    padding-block: 10rem;
+  }
+  .main .about__workflow .workflow {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-inline: 2rem;
+  }
+  .main .about__companies {
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 0;
+  }
+  .main .download {
+    max-width: 70%;
+    margin-inline: auto;
+  }
+  .footer {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 2fr 1fr;
+  }
+  .footer__details {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  .footer__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem 1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main .intro__img {
+    background-size: auto 100%;
+    background-position-x: right;
+  }
+  .main .intro__content {
+    margin-block: 11rem;
+  }
+  .main .intro__content .details {
+    width: 56%;
+  }
+  .main .download {
+    max-width: 50%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
