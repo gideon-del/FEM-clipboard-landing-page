@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+/*
+------------------------
+------Variables---------
+------------------------
+*/
+:root {
+  //Color
+  --c-strong-cyan: hsl(171, 66%, 44%);
+  --c-light-blue: hsl(233, 100%, 69%);
+  --c-d-grayish-blue: hsl(210, 10%, 33%);
+  --c-grayish-blue: hsl(201, 11%, 66%);
+  --foooter: hsl(204, 17%, 89%);
+  --c-white: #fff;
+  --c-black: hsl(0, 0%, 0%);
+  //Fonts
+  --fs: 1.8rem;
+  --fw-4: 400;
+  --fw-6: 600;
+}
+html {
+  font-size: 62.5%;
+}
+
+/*
+------------------------
+----------Reset----------
+------------------------
+*/
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  font-family: "BAi Jamjure", sans-serif;
+  font-size: var(--fs);
+  line-height: 30px;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+  border: none;
+}
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+ul {
+  list-style-type: none;
+}
+
+img,
+picture {
+  display: inline-block;
+  object-fit: cover;
+}
+
+/*
+------------------------------
+--------Reusable Code----------
+------------------------------
+*/
+.parag {
+  color: var(--c-grayish-blue);
+  font-size: var(--fs);
+  text-align: center;
+  font-weight: var(--fw-4);
+}
+.header__main {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--c-d-grayish-blue);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.btn {
+  padding: 1.5rem 7rem;
+  border-radius: 100px;
+  color: var(--c-white);
+  display: inline-block;
+  text-align: center;
+  &-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    .blue {
+      background-color: var(--c-light-blue);
+      position: relative;
+      overflow: hidden;
+    }
+    .cyan {
+      background-color: var(--c-strong-cyan);
+    }
+  }
+}
+.header__secondary {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--c-d-grayish-blue);
+  margin-bottom: 1rem;
+}
+.header__tetiary {
+  color: var(--c-d-grayish-blue);
+  font-weight: var(--fw-6);
+  font-size: 2.5rem;
+  text-align: center;
+}
+.footer__link {
+  font-size: 2rem;
+  color: var(--c-d-grayish-blue);
+}
+
+/*
+------------------------
+--------Header----------
+------------------------
+*/
+.header {
+  background-image: url(../images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  margin-bottom: 14rem;
+  padding-block: 10rem 3rem;
+  width: 100%;
+  background-size: cover;
+  &__container {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    gap: 2rem;
+  }
+  &__content {
+    padding-inline: 2rem;
+  }
+}
+/*
+------------------------
+----------Main----------
+------------------------
+*/
+.main {
+  width: 90vw;
+  margin-inline: auto;
+  margin-bottom: 3rem;
+  .intro {
+    margin-bottom: 13rem;
+    &__title {
+      margin-block: 2rem 3rem;
+    }
+    &__grid {
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      gap: 5rem;
+    }
+    &__img {
+      background-image: url(../images/image-computer.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+  }
+  .about {
+    margin-bottom: 12rem;
+    &__title {
+      margin-bottom: 5rem;
+    }
+    &__workflow {
+      display: grid;
+      grid-template-rows: 1fr 2fr;
+      margin-bottom: 6rem;
+      .workflow {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        margin-block: 4rem;
+        &__container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 2rem;
+        }
+      }
+    }
+    &__img {
+      background-image: url(../images/image-devices.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+    &__companies {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 7rem;
+    }
+  }
+  .download {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    margin-bottom: 3rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/*
+--------------------------
+----------Footer----------
+--------------------------
+*/
+.footer {
+  padding: 3rem 2rem;
+  background-color: var(--foooter);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  &__details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  &__logo {
+    img {
+      width: 10rem;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+  &__icons {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+  }
+}
