@@ -312,7 +312,7 @@ picture {
   }
   .main {
     width: 100%;
-    margin-bottom: 10rem;
+    margin-bottom: 12rem;
     .intro {
       &__title {
         max-width: 50%;
@@ -342,6 +342,8 @@ picture {
     .about {
       &__title {
         width: 50%;
+        height: 100%;
+        margin-bottom: 12rem;
         margin-inline: auto;
       }
       &__workflow {
