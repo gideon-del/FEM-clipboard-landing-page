@@ -29,7 +29,7 @@ html {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  font-family: "BAi Jamjure", sans-serif;
+  font-family: "BAi Jamjuree", sans-serif;
   font-size: var(--fs);
   line-height: 30px;
 }
@@ -296,6 +296,7 @@ picture {
   }
   .main {
     width: 100%;
+    margin-bottom: 10rem;
   }
   .main .intro__title {
     max-width: 50%;
